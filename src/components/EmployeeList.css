@@ -1,0 +1,206 @@
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f4f6f9;
+  padding-top: 40px;
+}
+
+
+.card {
+  background: white;
+  width: 95%;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.search-input {
+  width: 260px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+
+.add-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+
+.add-btn {
+  background: #198754;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-btn:hover {
+  background: #157347;
+}
+
+
+.page-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.page-info select {
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.page-info select:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th {
+  text-align: left;
+  background: #0d6efd;
+  color: white;
+  padding: 12px;
+}
+
+.employee-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.employee-table tr:hover {
+  background: #f1f5ff;
+}
+
+
+.action-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #0b5ed7;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #bb2d3b;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.pagination button {
+  min-width: 90px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #0d6efd;
+  color: white;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+.pagination button:disabled {
+  background-color: #0d6efd;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+.pagination span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  padding: 0 6px;
+}
+
+.page-size-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.page-size-wrapper select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #0d6efd;
+  cursor: pointer;
+}
